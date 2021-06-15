@@ -1,0 +1,49 @@
+Created by testinium on 15.06.2021
+
+This is a concept file with following syntax for each concept.
+# Uygulamayı aç ve izinleri kabul et
+* Sayfa güncellemesi için "5" sn bekle
+* "com.android.packageinstaller:id/permission_allow_button" id'li elemana tıkla ve izni kabul et
+* Sayfa güncellemesi için "5" sn bekle
+* "com.turkishairlines.mobile:id/frPrivacy_btnAccept" id'li elemana tıkla ve izni kabul et
+* Sayfa güncellemesi için "5" sn bekle
+
+# Bilet al sayfasına git
+* "com.turkishairlines.mobile:id/acMain_btnBooking" id'li elemana tıkla ve bilet al sayfasına git
+* Sayfa güncellemesi için "5" sn bekle
+
+# Tek yön SAW to ESB bilgisini gir
+* "com.turkishairlines.mobile:id/frDashboard_tvOneWay" id'li elemana tıkla ve tek gidiş seç
+* "com.turkishairlines.mobile:id/frDashboard_tvFromCode" id'li elemana tıkla
+* Sayfa güncellemesi için "5" sn bekle
+* "com.turkishairlines.mobile:id/frAirportSelection_etSearch" id'li arama bölümüne "SAW" verisini gönder
+* "//*/android.widget.TextView[@text=\"SAW - Sabiha Gokcen Airport\"]" xpath'li elemanı seç
+* Sayfa güncellemesi için "5" sn bekle
+* "com.turkishairlines.mobile:id/frDashboard_tvToCode" id'li elemana tıkla
+* Sayfa güncellemesi için "5" sn bekle
+* "com.turkishairlines.mobile:id/frAirportSelection_etSearch" id'li arama bölümüne "ESB" verisini gönder
+* "//*/android.widget.TextView[@text=\"ESB - Ankara Esenboga Airport\"]" xpath'li elemanı seç
+* Sayfa güncellemesi için "5" sn bekle
+
+# 2 gün sonraki tarih seçilir
+* "com.turkishairlines.mobile:id/frDashboard_rlDeparture" id'li elemana tıkla
+* "//*/android.widget.TextView[@selected=\"true\"]" xpath ile şu an seçili günü al ve "2" gün sonraki tarihi "//*/android.widget.TextView[@text=\"%d\"]" ile seç
+* "com.turkishairlines.mobile:id/frDashboard_btnDone" id'li elemana tıkla
+* Sayfa güncellemesi için "5" sn bekle
+
+# Yetişkin sayısı 2'ye yükseltilir ve arama yapılır
+* "//*/android.widget.ImageView[@resource-id=\"com.turkishairlines.mobile:id/cvPassengerItem_imPlus\"]" xpath'li elemana "1" defa tıklanır ve yetişkin sayısı arttırılır
+* "com.turkishairlines.mobile:id/frDashboard_btnSearch" id'li elemana tıkla
+* Sayfa güncellemesi için "5" sn bekle
+
+# Uçuşların listelendiği kontrol edilir
+* "//*/android.widget.FrameLayout[@resource-id=\"com.turkishairlines.mobile:id/itemFlightSearchParent_cvRoot\"]" xpath ile uçuşların listelendiği kontrol edilir
+* Sayfa güncellemesi için "5" sn bekle
+
+# İlk uçuşun ekonomi bileti seçilir ve devam a tıklanır
+* "//*/android.widget.FrameLayout[@resource-id=\"com.turkishairlines.mobile:id/itemFlightSearchParent_cvRoot\"]" xpath ile uçuşu veya tipini seç
+* Sayfa güncellemesi için "5" sn bekle
+* "//*/android.widget.TextView[contains(@text,'EcoFly')]" xpath ile uçuşu veya tipini seç
+* Sayfa güncellemesi için "5" sn bekle
+* "com.turkishairlines.mobile:id/frFlightSearch_btnContinue" id'li elemana devam etmek için tıkla
+* Sayfa güncellemesi için "5" sn bekle

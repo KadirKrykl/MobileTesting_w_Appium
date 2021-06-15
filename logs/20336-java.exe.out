@@ -1,0 +1,78 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"logLevel":"debug","message":"gauge-java took 692milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 692"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 65343"}
+{"logLevel":"info","message":"Listening on port:65343"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'HomePage.goToBookFlightById' and 'HomePage.goToBookFlightById'"}
+{"logLevel":"debug","message":"Found {} id'li elemana tıkla ve bilet al sayfasına git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Booking.getDayByXpath' and 'Booking.getDayByXpath'"}
+{"logLevel":"debug","message":"Found {} xpath'li elemana {} defa tıklanır ve yetişkin sayısı arttırılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Booking.getDayByXpath' and 'Booking.getDayByXpath'"}
+{"logLevel":"debug","message":"Found {} xpath ile şu an seçili günü al ve {} gün sonraki tarihi {} ile seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Booking.clickById' and 'Booking.clickById'"}
+{"logLevel":"debug","message":"Found {} id'li elemana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Booking.selectByXpath' and 'Booking.selectByXpath'"}
+{"logLevel":"debug","message":"Found {} xpath'li elemanı seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'HomePage.acceptById' and 'HomePage.acceptById'"}
+{"logLevel":"debug","message":"Found {} id'li elemana tıkla ve izni kabul et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'GeneralCases.acceptById' and 'GeneralCases.acceptById'"}
+{"logLevel":"debug","message":"Found Sayfa güncellemesi için {} sn bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Booking.selectOneWayById' and 'Booking.selectOneWayById'"}
+{"logLevel":"debug","message":"Found {} id'li elemana tıkla ve tek gidiş seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'FlightList.checkFlyList' and 'FlightList.checkFlyList'"}
+{"logLevel":"debug","message":"Found {} xpath ile uçuşların listelendiği kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Booking.searchById' and 'Booking.searchById'"}
+{"logLevel":"debug","message":"Found {} id'li arama bölümüne {} verisini gönder in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} id'li arama bölümüne {} verisini gönder : public void searchById(String key, String search)"}
+{"logLevel":"debug","message":"\t{} id'li elemana tıkla ve tek gidiş seç : public void selectOneWayById(String key)"}
+{"logLevel":"debug","message":"\tSayfa güncellemesi için {} sn bekle : public void acceptById(ınt second)"}
+{"logLevel":"debug","message":"\t{} xpath'li elemanı seç : public void selectByXpath(String key)"}
+{"logLevel":"debug","message":"\t{} id'li elemana tıkla : public void clickById(String key)"}
+{"logLevel":"debug","message":"\t{} id'li elemana tıkla ve bilet al sayfasına git : public void goToBookFlightById(String key)"}
+{"logLevel":"debug","message":"\t{} xpath'li elemana {} defa tıklanır ve yetişkin sayısı arttırılır : public void getDayByXpath(String key, ınt n)"}
+{"logLevel":"debug","message":"\t{} xpath ile uçuşların listelendiği kontrol edilir : public void checkFlyList(String key)"}
+{"logLevel":"debug","message":"\t{} id'li elemana tıkla ve izni kabul et : public void acceptById(String key)"}
+{"logLevel":"debug","message":"\t{} xpath ile şu an seçili günü al ve {} gün sonraki tarihi {} ile seç : public void getDayByXpath(String key, ınt day, String target)"}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!Test baslıyor!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Haz 15, 2021 5:20:49 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla ve izni kabul et' using 'class HomePage.acceptById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla ve izni kabul et' using 'class HomePage.acceptById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla ve bilet al sayfasına git' using 'class HomePage.goToBookFlightById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla ve tek gidiş seç' using 'class Booking.selectOneWayById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla' using 'class Booking.clickById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li arama bölümüne {} verisini gönder' using 'class Booking.searchById"}
+{"logLevel":"debug","message":"Executing '{} xpath'li elemanı seç' using 'class Booking.selectByXpath"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla' using 'class Booking.clickById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li arama bölümüne {} verisini gönder' using 'class Booking.searchById"}
+{"logLevel":"debug","message":"Executing '{} xpath'li elemanı seç' using 'class Booking.selectByXpath"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla' using 'class Booking.clickById"}
+{"logLevel":"debug","message":"Executing '{} xpath ile şu an seçili günü al ve {} gün sonraki tarihi {} ile seç' using 'class Booking.getDayByXpath"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla' using 'class Booking.clickById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} xpath'li elemana {} defa tıklanır ve yetişkin sayısı arttırılır' using 'class Booking.getDayByXpath"}
+{"logLevel":"debug","message":"Executing '{} id'li elemana tıkla' using 'class Booking.clickById"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Executing '{} xpath ile uçuşların listelendiği kontrol edilir' using 'class FlightList.checkFlyList"}
+{"logLevel":"debug","message":"Executing 'Sayfa güncellemesi için {} sn bekle' using 'class GeneralCases.acceptById"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
